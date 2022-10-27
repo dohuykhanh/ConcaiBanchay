@@ -1,7 +1,7 @@
 import React,  { useEffect, useState } from 'react';
 import { Button, Modal } from 'react-bootstrap'
 import axios from "axios";
-import styles from "./TungChiNhanh.module.css"
+import styles from "./Trangtinhluong.module.css"
 import DieuHuong from "../../components/DieuHuong/Dieuhuong"
 import { useNavigate } from "react-router-dom";
 import ViewXemhodon from "./ViewXemHoaDon"
@@ -508,17 +508,13 @@ var Manglistluong=[]
      
     </nav> */}
 
-      <div>
+      <div className={styles.modalBackgroundd}>
+      <div className={styles.modalContainerr}> 
+              
+            
             <div className='row'>
-                {/* <div className='mt-5 mb-4'>
-                    <Button variant='primary' onClick={() => { handlePostShow() }}><i className='fa fa-plu'></i>
-                        Thêm Nhân Viên
-                    </Button>
-                </div> */}
-            </div>
-            <div className='row'>
-                <div className='table-responsive'>
-                    <table className='table table-striped table-hover table-bordered'>
+                <div className='table-responsive' style={{borderRadius:"20px"}}>
+                    <table className='table table-striped table-hover table-bordered' >
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -543,13 +539,18 @@ var Manglistluong=[]
                         </tbody>
                         
                     </table>
-                    <Button size='sm' variant='danger' onClick={() => { handlepostLuong() }}>Xac THuc</Button>
+                    <Button size='sm' variant='danger' style={{position:"relative",bottom:"10px",left:"250px"}} onClick={() => { handlepostLuong() }}>Xác Thực</Button>
 
 
 
                     
                 </div>
             </div>
+            <div className={styles.nuttt}>
+            <button  onClick={() => closemodal(false)}> X </button>
+            </div> 
+            </div>
+            
             {/* View chi tiet hoa don*/}
             <div>
                 {
@@ -692,9 +693,7 @@ var Manglistluong=[]
 
             </div>
 
-            <div className={"nut"}>
-            <button  onClick={() => closemodal(false)}> X </button>
-            </div> 
+          
       
       {/* <a>Code Chuc nang</a> */}
     </div>

@@ -88,20 +88,21 @@ function NhanVien() {
 
   return (
     
-    <div>
+    <div className='container'>
       
       <div className='row'>
-                <div className='mt-5 mb-4'>
-                    <Button variant='primary' onClick={() => {navigate("/DangKyChu")}}><i className='fa fa-plu'></i>
+                <div className='col'>
+                    <Button variant='primary' style={{position:"relative" , top:"14px"}} onClick={() => {navigate("/DangKyChu")}}><i className='fa fa-plu'></i>
                         Tạo tài khoản
                     </Button>
                 </div>
             </div>
+            <div className={styles.ThongKeTaiKhoan}>
             <div className='row'>
                 <div className='table-responsive'>
-                    <table className='table table-striped table-hover table-bordered'>
+                    <table className='table table-striped table-hover table-bordered' style={{border:"solid 1px"}}>
                         <thead>
-                            <tr>
+                            <tr style={{backgroundColor:"#ffff94"}}>
                                 <th>User</th>
                                 <th>Password</th>
                                 <th>Vai trò</th>
@@ -123,7 +124,8 @@ function NhanVien() {
                         </tbody>
                     </table>
                 </div>
-            </div>      
+            </div>   
+            </div>   
       
     </div>
   );

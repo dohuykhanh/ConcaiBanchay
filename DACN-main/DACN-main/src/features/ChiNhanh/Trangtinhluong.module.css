@@ -1,4 +1,4 @@
-.modalBackground {
+.modalBackgroundd {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -7,7 +7,7 @@
     z-index: 2;
 }
 
-.nut {
+.nuttt {
   
     /* Green */
     border: none;
@@ -24,9 +24,11 @@
     
 }
 
-.modalContainer  {
+.modalContainerr  {
     display: flex;
     border: none;
     background-color: #18c6e1;
     border-radius:20px ;
+    position: relative;
+    right: 87px;
 }

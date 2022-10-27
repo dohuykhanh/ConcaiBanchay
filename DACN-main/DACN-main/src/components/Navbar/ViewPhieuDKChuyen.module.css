@@ -1,13 +1,12 @@
-.modalBackground {
+.modalBackgroundChuyen {
     margin: 0;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
-.nut {
+.nutChuyen {
   
     /* Green */
     border: none;
@@ -24,9 +23,14 @@
     
 }
 
-.modalContainer  {
+.modalContainerChuyen  {
     display: flex;
     border: none;
     background-color: #18c6e1;
-    border-radius:20px ;
+    position: relative;
+    top: 335px;
+    left: 614px;
+    width: 306px;
+    height: 675px;
+    z-index: 1;
 }

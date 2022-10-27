@@ -439,18 +439,23 @@ var Manggop=[]
     </nav>
 
       <div>
+      <div className='container'>
             <div className='row'>
-                <div className='mt-5 mb-4'>
+            <div className='col'></div>
+                <div className='col'></div>
+                <div className='col' style={{position:"relative" , top:"15px",color:"red",left:"170px"}}>
                     <Button variant='primary' onClick={() => { handlePostShow() }}><i className='fa fa-plu'></i>
                         Thêm Nhân Viên
                     </Button>
                 </div>
             </div>
+        </div> 
+        <div className={styles.BangNhanVien}>
             <div className='row'>
                 <div className='table-responsive'>
-                    <table className='table table-striped table-hover table-bordered'>
+                    <table className='table table-striped table-hover table-bordered'style={{border:"solid 1px"}}>
                         <thead>
-                            <tr>
+                            <tr style={{backgroundColor:"#ffff94"}}>
                                 <th>Name</th>
                                 <th>SDT</th>
                                 <th>So luong hd</th>
@@ -479,6 +484,7 @@ var Manggop=[]
 
                     
                 </div>
+            </div>
             </div>
             {/* View chi tiet hoa don*/}
             <div>

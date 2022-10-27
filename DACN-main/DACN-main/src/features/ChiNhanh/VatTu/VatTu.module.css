@@ -34,3 +34,11 @@
 .fonthd {
     color: var(--textColor);
 }
+.BangVatTu{
+    position: relative;
+    bottom: 20px;
+    border-collapse: collapse;
+    width: 90%;
+    left: 50px;
+    z-index: 2;
+}

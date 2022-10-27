@@ -593,33 +593,32 @@ var Manggop=[]
     </nav>
 
       <div>
-            <div className='row'>
+      <div className='container'>
+          
                
-            <div className='mt-4'>
-                <div className='container'>
+            
                     <div className='row'>
-                        <div className='col'>
+                        <div className='col' style={{position:"relative" , top:"15px",left:"170px"}}>
                     <Button variant='primary' onClick={() => { handleViewShowTL()}}><i className='fa fa-plu'></i>
                         Tinh lương
                     </Button>
                     </div>
-                    <div className='col'>
+                    <div className='col' style={{position:"relative" , top:"15px"}}>
                     <input type="Number" className='form-control' onChange={(e) => setTienthuong(e.target.value)} placeholder="mời nhập tiền thưởng" />
                     </div>
                     {/* <div className='col'>
                     <input type="Number" className='form-control' onChange={(e) => setTienchuyencan(e.target.value)} placeholder="mời nhập tiền chuyen can" />
                     </div> */}
                     </div>
-                </div>
-                </div>
-
-                \
+    
+           
             </div>
+            <div className={styles.BangNhanVien}>
             <div className='row'>
                 <div className='table-responsive'>
-                    <table className='table table-striped table-hover table-bordered'>
+                    <table className='table table-striped table-hover table-bordered' style={{border:"solid 1px"}}>
                         <thead>
-                            <tr>
+                            <tr style={{backgroundColor:"#ffff94"}}>
                                 <th>NgayTinhLuong</th>
                                 <th>TốngTienTra</th>
                                 <th>CHI TIET</th>
@@ -650,6 +649,7 @@ var Manggop=[]
 
                     
                 </div>
+            </div>
             </div>
             {/* View chi tiet hoa don*/}
     

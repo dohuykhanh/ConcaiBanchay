@@ -30,3 +30,12 @@
 .hd{
     padding-left: 296px;
 }
+.ThongKeTaiKhoan{
+  
+  position: relative;
+  top: 30px;
+  border-collapse: collapse;
+  width: 90%;
+  left: 50px;
+
+}

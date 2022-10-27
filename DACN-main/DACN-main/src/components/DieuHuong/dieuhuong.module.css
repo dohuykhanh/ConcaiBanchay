@@ -20,6 +20,7 @@
     left: -895px;
     top:27px;
     height: 81.3vh;
+    z-index: 3;
 }
 
 .nut {

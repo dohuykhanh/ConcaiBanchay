@@ -5,7 +5,7 @@ import axios from "axios";
 import moment from 'moment';
 import ReactToPrint, { useReactToPrint } from 'react-to-print';
 // import "../../features/ChiNhanh/Viewxemhoadon.css"
-import "../../features/ChiNhanh/Viewxemhoadon.css"
+import styles from "./ViewPhieuDKChuyen.module.css"
 
 
 
@@ -101,9 +101,9 @@ const ViewPhieuDKChuyen = ({ Data,closemodal,IDnguoiban}) => {
   return (
    
 <div>
-<div className="modalBackground">
-    <div className="modalContainer">
-<Button size='sm' variant='primary' onClick={handleclickk}>Xem</Button>|
+<div className={styles.modalBackgroundChuyen}>
+    <div className={styles.modalContainerChuyen}>
+
 <div className='row'>
                 <div className='table-responsive'>
                     <table className='table table-striped table-hover table-bordered'>
@@ -132,11 +132,13 @@ const ViewPhieuDKChuyen = ({ Data,closemodal,IDnguoiban}) => {
                     </table>
 
                     
-
+                    <Button size='sm' variant='primary' onClick={handleclickk} style={{position:"relative",bottom:"10px",left:"190px"}}>Xem</Button>             
                 </div>
             </div>
 
-            <button  onClick={() => closemodal(false)}> X </button>
+            <div className={styles.nuttt}>
+            <button  onClick={() => closemodal(false)} style={{padding:"10px"}} > X </button>
+            </div>   
 </div>
 </div>
 </div>

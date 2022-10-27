@@ -34,3 +34,11 @@
     position: relative;
     right: 211px;
 }
+.BangNhanVien{
+    position: relative;
+    top:30px;
+    border-collapse: collapse;
+    width: 90%;
+    left: 50px;
+    z-index: 1;
+}

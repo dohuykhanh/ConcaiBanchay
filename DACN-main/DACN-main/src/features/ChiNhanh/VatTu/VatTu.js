@@ -312,7 +312,7 @@ const ThongbaoTonKho = () => {
       </section>
       <div>
             <div className='row'>
-                <div className='mt-5 mb-4'>
+                <div className='mt-6 mb-4' style={{position:"relative",left:"730px",width:"430px"}}>
                     {Xep && <Button variant='primary' style={{margin:"5px"}} onClick={() => { handlePostShow() }}><i className='fa fa-plu'></i>
                         Thêm vật tư
                     </Button>}
@@ -326,11 +326,12 @@ const ThongbaoTonKho = () => {
                     </div>
                
             </div>
+            <div className={styles.BangVatTu}>
             <div className='row'>
                 <div className='table-responsive'>
-                    <table className='table table-striped table-hover table-bordered'>
+                    <table className='table table-striped table-hover table-bordered' style={{border:"solid 1px"}}>
                         <thead>
-                            <tr>
+                            <tr style={{backgroundColor:"#ffff94"}}>
                                 <th>Tên vật tư</th>
                                 <th>số lượng</th>
                                 <th>ngày sản xuất</th>
@@ -359,7 +360,7 @@ const ThongbaoTonKho = () => {
                     </table>
                 </div>
             </div>
-
+        </div>
              {/* View Modal */}
              <div className='model-box-view'>
                 <Modal
