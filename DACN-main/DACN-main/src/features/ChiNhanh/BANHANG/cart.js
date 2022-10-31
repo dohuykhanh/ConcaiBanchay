@@ -146,10 +146,10 @@ const hamthanhtoan = () => {
 
 
   
-  for(let i = 0; i < cart.length; i++) {
-    hoadon.push(cart[i]);
+  // for(let i = 0; i < cart.length; i++) {
+  //   hoadon.push(cart[i]);
     
-  }
+  // }
   console.log("Dataakhanh1", Data5)
   console.log("Dataakhanh2", hoadon)
   for(let i=0; i<Data5.length; i++) {

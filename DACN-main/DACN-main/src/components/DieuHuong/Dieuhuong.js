@@ -18,7 +18,7 @@ function Dieuhuong() {
         <br></br>
         <button className= {styles.nut} onClick={() => {navigate(`/VatTu`)}} >Sản Phẩm</button>
         <br></br>
-        <button className= {styles.nut} onClick={() => {navigate(`/BanHang`)}}>Hóa Đơn</button>
+        <button className= {styles.nut} onClick={() => {navigate(`/ThongKeDoanhThu`)}}>Thống Kê</button>
         <br></br>
         <button className= {styles.nut} onClick={() => {navigate(`/Trangluongnhanvien`)}}>Lương</button>
       </div>

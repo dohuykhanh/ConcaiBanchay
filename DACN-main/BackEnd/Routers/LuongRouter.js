@@ -11,7 +11,8 @@ LuongRouter.post("/", async(req, res) => {
         Chitiet: [req.body.hoadon],
 
         NgayTinh: new Date(req.body.NgayBan),
-        Tienphaitra: req.body.Tienphaitra
+        Tienphaitra: req.body.Tienphaitra,
+        ChiNhanh: req.body.ChiNhanh
     };
     const result = await db.Luong.insertOne(VatTu);
 
@@ -50,7 +51,25 @@ LuongRouter.get("/", async(req, res) => {
     }
 })
 
+LuongRouter.get("/c/:chinhanh", async(req, res) => {
+    const chinhanh = req.params.chinhanh;
+    const result = await db.Luong.find({
+        ChiNhanh: chinhanh,
+    }).toArray();
 
+    if (!result) {
+        res.json({
+            status: "FAILED",
+            message: "Không có dữ liệu"
+        })
+    } else {
+        res.json({
+            status: "SUCCESS",
+            message: "Lấy được dữ liệu",
+            data: result
+        })
+    }
+})
 LuongRouter.delete("/:id", async(req, res) => {
     const id = req.params.id;
     const body = req.body;

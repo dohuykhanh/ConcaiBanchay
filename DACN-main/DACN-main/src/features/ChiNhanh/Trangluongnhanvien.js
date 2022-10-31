@@ -147,7 +147,7 @@ var Manggop=[]
 
                         const GetallchitietLuong = async () => {
               
-                            const url = `http://localhost:5001/Luong`
+                            const url = `http://localhost:5001/Luong/c/${Tenchinhanh}`
                             axios.get(url)
                                       .then(response => {
                                           const result = response.data;

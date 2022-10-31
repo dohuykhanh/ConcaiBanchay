@@ -71,6 +71,24 @@ HoaDonRouter.get("/h/:hoadoncua", async(req, res) => {
         })
     }
 })
+HoaDonRouter.get("/c/:chinhanh", async(req, res) => {
+    const chinhanh = req.params.chinhanh;
+    const result = await db.HoaDon.find({
+        ChiNhanh:chinhanh,
+    }).toArray();
 
+    if (!result) {
+        res.json({
+            status: "FAILED",
+            message: "Không có dữ liệu"
+        })
+    } else {
+        res.json({
+            status: "SUCCESS",
+            message: "Lấy được dữ liệu",
+            data: result
+        })
+    }
+})
 
 module.exports = HoaDonRouter;

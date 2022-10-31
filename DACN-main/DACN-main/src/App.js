@@ -16,7 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import VatTu from './features/ChiNhanh/VatTu/VatTu';
 import VatTu from './features/ChiNhanh/VatTu/navbarchuyenvt';
 import BanHang from './features/ChiNhanh/BANHANG/navbargiohang'
-
+import ThongKeDoanhThu from './features/ChiNhanh/ThongKeDoanhThu/ThongKeDoanhThu'
 
 function App() {
     return (
@@ -90,6 +90,12 @@ function App() {
            <Route path='/BanHang' element={
              <Home>
              <BanHang/>
+             </Home>
+           }>
+           </Route>
+           <Route path='/ThongKeDoanhThu' element={
+             <Home>
+             <ThongKeDoanhThu/>
              </Home>
            }>
            </Route>

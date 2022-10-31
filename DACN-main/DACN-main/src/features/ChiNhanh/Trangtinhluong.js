@@ -427,8 +427,9 @@ var Manglistluong=[]
     //hamf gui tien luong len
     const handleSubmitee = (hoadon,NgayBan, Tienphaitra) => {
         const url = 'http://localhost:5001/Luong'
+        let ChiNhanh = Tenchinhanh
         // let Gia = price;
-        const Credentials = {hoadon,NgayBan, Tienphaitra}
+        const Credentials = {hoadon,NgayBan, Tienphaitra, ChiNhanh}
         axios.post(url, Credentials)
             .then(response => {
                 const result = response.data;

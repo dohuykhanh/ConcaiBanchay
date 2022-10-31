@@ -12,6 +12,7 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
     "chart.js": "^3.9.1",
+    "chartjs-plugin-labels": "^1.1.0",
     "cors": "^2.8.5",
     "face-api.js": "^0.22.2",
     "firebase": "^9.9.4",

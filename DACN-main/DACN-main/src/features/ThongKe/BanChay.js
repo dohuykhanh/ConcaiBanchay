@@ -2,8 +2,17 @@ import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import styles from "./BanChay.module.css"
-function BanChay() {
+const BanChay=()=> {
+  
   ChartJS.register(ArcElement, Tooltip, Legend);
+  const data =[
+    {name: "red", value: 12},
+    {name: "blue", value: 19},
+    {name: "yellow", value: 3},
+    {name: "green", value: 5},
+    {name: "purple", value: 2},
+    {name: "orange", value: 3},
+  ]
   return (
     <>
     <React.Fragment>
@@ -17,7 +26,7 @@ function BanChay() {
           datasets: [
             {
               label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              data: [12,19, 3, 5, 2, 3],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
